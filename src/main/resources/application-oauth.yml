@@ -1,0 +1,9 @@
+# JWT Properties
+oauth-server:
+  issuer: https://www.play-ce.io
+  subject: Playce User Info
+  secret-key: cGxheWNlLW9hdXRo
+  access-token-expire-time: 180
+  refresh-token-expire-time: 720
+  bearer-prefix: Bearer
+  authentication-header-name: Authorization

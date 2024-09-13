@@ -1,0 +1,26 @@
+EXPIRED_JWT_TOKEN: Expired JWT.
+BAD_JWT_TOKEN: Invalid JWT.
+NO_EXIST_PUB: Pub file not exist in server.
+NO_EXIST_PRIV: Priv file not exist in server.
+NOT_FOUND_USER: Invalid user ID or password.
+INVALID_REQUEST_PARAM: Invalid Request Parameter
+INVALID_CURRENT_PASSWORD: Your current password is incorrect.
+INVALID_NEW_PASSWORD: your new password is currently use.
+NOT_BEARER_TOKEN: Not bearer token.
+BAD_SIGNING_KEY:  Invalid JWT signature.
+INVALID_JWT_CLAIMS: Invalid JWT Claims.
+UNSUPPORTED_JWT: Unsupported JWT.
+JWT_EMPTY_CLAIMS: JWT claims String is empty.
+INVALID_JWT_FORM: Invalid JWT Form.
+NOT_TRUSTED_TOKEN_SET: Cannot set this token to trusted.
+EMPTY_AUTH_HEADER: The authorization header cannot be blank.
+INVALID_AUTH_HEADER: Invalid authorization header size.
+INIT_DB_FAILURE: Not supported DataBase.
+PASSWORD_INCORRECT:  Your current password is incorrect.
+INTERNAL_SERVER_ERROR: Error occurred on the server.
+ACCOUNT_LOCKED: Account Locked.
+DUPLICATED_USER_LOGIN_ID: A user ID [{0}] already exists. Use a different user ID.
+DUPLICATED_EMAIL: The email address [{0}] already exists. Please enter a different email address.
+NOT_FOUND_USER_ROLE: The role could not be found.
+FORBIDDEN: Forbidden.
+UNAUTHORIZED: You do not have authentication authority.

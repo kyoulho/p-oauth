@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: Playce OAuth
+
+  main:
+    banner-mode: log
+
+  mvc:
+    static-path-pattern: /**
+    pathmatch.matching-strategy: ant_path_matcher
+  web.resources.static-locations: file:./front
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/oauthdb
+    username: playce
+    password: playce
+
+  sql:
+    init:
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data-0-user.sql
+
+  profiles:
+    include:
+      - oauth
+
+  messages:
+    basename: i18n/errors
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+
+logging:
+  file:
+    name: logs/oauth.log
+  level:
+    io.playce.oauth: debug
+
+server:
+  servlet.context-path: /oauth
+  forward-headers-strategy: native
+  tomcat.redirect-context-root: false
+  port: 8081
+
+

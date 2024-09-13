@@ -1,0 +1,4 @@
+insert into user_access(user_login_id, username, password, login_failure_cnt, lock_yn, email, organization, job_title, admin_change_yn, delete_yn, regist_datetime, modify_datetime) values ('admin', 'Admin', '{bcrypt}$2a$10$Tsw/dbWw6gipVh0/ClYV1./YNPYdt939M1T5RAId6uUZpBEkKLpNG',0,'N', '', '', '', 'N', 'N', now(), now());
+insert into user_role(user_role_id, user_role_code, user_role_name, description) values (1, 'ROLE_ADMIN', 'Administrator', 'Grants access to all resources and features.');
+insert into user_role(user_role_id, user_role_code, user_role_name, description) values (2, 'ROLE_USER', 'Read-Only', 'Grants read-only to all resources.');
+insert into user_access_role_link(user_id, user_role_id) values (1, 1);
